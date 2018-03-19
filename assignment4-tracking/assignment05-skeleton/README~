@@ -1,6 +1,0 @@
-Zhongjie YU & Xiaoyu SHEN
-SID 2557816 & 2558
-
-1.2
-By implement more than one particle filters we can achieve multiple objects tracking.
-If two visually similar targets interact, it is necessary to correctly estimate the speed of each target. Otherwise the two bounding box may follow only one target afterwards. See seq4 as an example. The best covariance matrix Q for seq4 is not found yet, but the current Q still works.

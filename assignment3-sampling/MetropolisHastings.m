@@ -18,9 +18,11 @@ while i<=N
     px_prime = pstar( x_prime,w1,w2,miu1,miu2,sigma1,sigma2);
     px = pstar( x,w1,w2,miu1,miu2,sigma1,sigma2);
     pAccept = min(1,px_prime/px);
+    % as Q(x|x') = Q(x'|x) = exp((-(x-x')^2)/2sigma^2)
     if binornd(1,pAccept,1,1)
         xSample(i) = x_prime;
         i=i+1;
+        x=x_prime;
     end
     count=count+1;
 end
